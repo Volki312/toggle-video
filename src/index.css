@@ -8,6 +8,7 @@ body {
   width: 600px;
   max-height: calc(90vw * (9 / 16) + 6px);
   max-width: 90vw;
+  /* position: relative; */
 }
 
 .video {
@@ -21,8 +22,8 @@ body {
 
 .controls {
   margin-top: 10px;
-  width: 100%;
-  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 .controls .control {
@@ -32,4 +33,24 @@ body {
   margin: 5px;
   border-radius: 4px;
   color: rgb(10, 4, 77);
+  box-sizing: border-box;
+}
+
+.spinner {
+  border: 3px solid rgba(56, 56, 56, 0.1);
+  border-top: 3px solid rgb(10, 4, 77, 0.5);
+  border-radius: 50%;
+  width: 14px;
+  height: 14px;
+  margin: 0 auto;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
