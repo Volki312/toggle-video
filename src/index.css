@@ -1,6 +1,22 @@
+body {
+  margin: 0;
+}
+
+.video-wrapper {
+  margin: 10px auto;
+  height: calc(610px * (9 / 16));
+  width: 600px;
+  max-height: calc(90vw * (9 / 16) + 6px);
+  max-width: 90vw;
+}
+
 .video {
+  pointer-events: none;
+  box-sizing: border-box;
+  box-shadow: inset 0px 0px 0px 6px rgba(0, 0, 0, 0.3);
+  /* border: 6px solid rgba(0, 0, 0, 0.3); */
+  border-radius: 6px;
   display: none;
-  margin: 0 auto;
 }
 
 .controls {
@@ -9,9 +25,9 @@
   text-align: center;
 }
 
-.control {
-  height: 50px;
-  width: 60px;
+.controls .control {
+  height: 40px;
+  width: 50px;
   font-size: 18px;
   margin: 5px;
   border-radius: 4px;
