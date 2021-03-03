@@ -53,6 +53,8 @@ const App: React.FC = () => {
             muted={activeVideoIndex !== index}
             onBuffer={pauseVideos}
             onBufferEnd={playVideos}
+            // onPlay={playVideos}
+            // onPause={pauseVideos}
           />
         ))}
       </div>
